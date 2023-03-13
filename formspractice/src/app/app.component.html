@@ -1,0 +1,27 @@
+
+<h1>{{title}}</h1>
+<form #basicForm="ngForm" (submit)="getdata(basicForm.value)" >
+    <input type="text" ngModel name="user" placeholder="enter user name"/> 
+    <br /> <br />
+    <input type="text" ngModel name="email"placeholder="enter user email"/> 
+    <br /> <br />
+    <input type="text" ngModel name="password"placeholder="enter user password"/> 
+    <br /> <br />
+    <button>Register</button>
+</form> 
+
+<ul>
+    <li>{{userData.user}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.password}}</li>
+</ul>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<div class="example-button-row">
+    <button mat-flat-button>Basic</button>
+    <button mat-flat-button color="primary">Primary</button>
+    <button mat-flat-button color="accent">Accent</button>
+    <button mat-flat-button color="warn">Warn</button>
+    <button mat-flat-button disabled>Disabled</button>
+    <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+  <app-todolist></app-todolist>
